@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "calibration_status": "UNCALIBRATED_HEURISTIC",
+  "calibration_note": "初始经验值，未经回测或样本外校准，不能当作已验证的分档。口径是东方财富涨停板行情（不含 ST 与科创板）。改动任何数值都会改变情绪记录里的 config_sha256。",
+  "capture": {
+    "final_after_local_time": "15:05:00",
+    "max_capture_lag_days": 14
+  },
+  "sentiment": {
+    "metrics": {
+      "limit_up_count": {"direction": "higher_is_hotter", "cold": 30, "hot": 70},
+      "limit_down_count": {"direction": "lower_is_hotter", "cold": 20, "hot": 5},
+      "broken_board_rate": {"direction": "lower_is_hotter", "cold": 0.40, "hot": 0.20},
+      "max_consecutive_boards": {"direction": "higher_is_hotter", "cold": 3, "hot": 6},
+      "promotion_rate": {"direction": "higher_is_hotter", "cold": 0.20, "hot": 0.40},
+      "yesterday_limit_up_avg_change_pct": {"direction": "higher_is_hotter", "cold": 0.0, "hot": 2.5}
+    },
+    "tiers": [
+      {"id": "ICE", "label": "冰点", "max_score": -4},
+      {"id": "COLD", "label": "偏冷", "max_score": -2},
+      {"id": "NEUTRAL", "label": "中性", "max_score": 1},
+      {"id": "WARM", "label": "偏热", "max_score": 3},
+      {"id": "CLIMAX", "label": "高潮", "max_score": null}
+    ]
+  }
+}

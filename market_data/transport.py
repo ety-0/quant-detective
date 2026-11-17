@@ -14,6 +14,7 @@ ENDPOINTS = {
     'www.nasdaqtrader.com': {'/dynamic/SymDir/nasdaqlisted.txt', '/dynamic/SymDir/otherlisted.txt'},
     'push2.eastmoney.com': {'/api/qt/clist/get'},
     'push2his.eastmoney.com': {'/api/qt/stock/kline/get'},
+    'push2ex.eastmoney.com': {'/getTopicZTPool', '/getTopicZBPool', '/getTopicDTPool', '/getYesterdayZTPool'},
     'query.sse.com.cn': {'/sseQuery/commonQuery.do'},
     'www.szse.cn': {'/api/report/ShowReport'},
     'www.cninfo.com.cn': {'/new/data/szse_stock.json'},

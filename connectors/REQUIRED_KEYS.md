@@ -12,6 +12,7 @@ Still required for live research (not for `make verify` synthetic fixture):
 | SEC EDGAR / company filings | U.S. primary evidence | not wired |
 | Exchange / company disclosures | A-share primary evidence | not wired |
 | Market data (Yahoo etc.) | prices with source/timestamp | optional for research |
+| Eastmoney 涨停板行情 topic pools (public, no key) | A-share limit-up / broken-board / limit-down pools | wired in `ashare_limitup`; see `docs/ashare-limitup.zh-CN.md` |
 | OpenBB (optional ADAPT) | provider/MCP layer | not in lockfile |
 | Qlib (optional ADAPT) | PIT/backtest engine | not in lockfile |
 
