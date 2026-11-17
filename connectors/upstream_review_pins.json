@@ -16,6 +16,20 @@
       "git_commit": "3e071fcc2cd9f891cac6040ae60296dba76dab46",
       "stance": "ADAPT provider/MCP \u2014 not imported yet",
       "url": "https://github.com/OpenBB-finance/OpenBB"
+    },
+    "ZhuLinsen/daily_stock_analysis": {
+      "git_commit": "aa7228986f0ac8fc78e9147be81dddb277ef342d",
+      "reviewed_at": "2026-11-17",
+      "license": "MIT",
+      "stance": "ADAPT limit-up row field names and board-ladder ordering from data_provider/akshare_fetcher.py::get_limit_up_pool \u2014 not imported",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+    },
+    "akfamily/akshare": {
+      "git_commit": "25acdfac7ddf3a0721a0ebdcc6a1d7ef3e76abc9",
+      "reviewed_at": "2026-11-17",
+      "license": "MIT",
+      "stance": "REFERENCE for Eastmoney topic-pool endpoints and columns (akshare/stock/quote/stock_ztb_em.py) \u2014 not imported",
+      "url": "https://github.com/akfamily/akshare"
     }
   },
   "registry_name": "upstream_review_pins"
